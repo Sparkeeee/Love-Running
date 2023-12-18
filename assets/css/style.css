@@ -1,17 +1,28 @@
-
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic Project Styles */
+    color: #3a3a3a;
 }
 
 header {
-     background-color:aquamarine ;
+    background-color: aquamarine;
 }
 
 main {
     background-color: blueviolet;
+    /* Make Main take up an excess space to push footer to the bottom*/
+    flex: 1 0 auto;
 }
+
 footer {
     background-color: rgb(43, 226, 128);
+
 }
