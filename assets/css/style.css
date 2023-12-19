@@ -87,6 +87,7 @@ h1 {
     background-color: blueviolet;
     /* Make Main take up an excess space to push footer to the bottom*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 footer {
