@@ -25,6 +25,9 @@ header {
     z-index: 10;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -62,8 +65,25 @@ h1 {
     left:0 ;
     padding: 0 1rem;
     display: none;
+    top: 100%;
  }
-main {
+
+ /*Nav toggle*/
+
+ #nav-toggle:checked~nav {
+    display: block;  
+ }
+
+ #nav-toggle {
+    display: none;
+ }
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+
+    main {
     background-color: blueviolet;
     /* Make Main take up an excess space to push footer to the bottom*/
     flex: 1 0 auto;
